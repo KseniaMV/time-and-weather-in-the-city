@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Time and weather and the city</h1>
+    <div class="conteiner">
+
+       <!--Time and weather in Moscow -->
+
+        <div class="city_block">
+            <div class="city moscow">
+                <h2 class="city_name">moscow</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="moscow" data-number="524901" data-area="europe">get info</button>
+            </div>
+            <div class="city_back moscowInfo">
+                <h2 class="city_name">moscow</h2>
+                <h3>Time</h3>
+                <p id="moscowTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons moscowWeather"></p>
+                <p class="moscow_temp"></p>
+            </div>
+
+        </div>
+
+
+        <!--Time and weather in Kiev -->
+        <div class="city_block">
+            <div class="city kiev">
+                <h2 class="city_name">Kiev</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="kiev"  data-number="498817" data-area="europe">get info</button>
+            </div>
+            <div class="city_back kievInfo">
+                <h2 class="city_name">Kiev</h2>
+                <h3>Time</h3>
+                <p id="kievTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons kievWeather"></p>
+                <p class="kiev_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in London -->
+        <div class="city_block">
+            <div class="city london">
+                <h2 class="city_name">London</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="london"  data-area="europe" data-number="2643743">get info</button>
+            </div>
+            <div class="city_back londonInfo">
+                <h2 class="city_name">London</h2>
+                <h3>Time</h3>
+                <p id="londonTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons londonWeather"></p>
+                <p class="london_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Berlin -->
+        <div class="city_block">
+            <div class="city berlin">
+                <h2 class="city_name">Berlin</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="berlin"  data-area="europe" data-number="2950159">get info</button>
+            </div>
+            <div class="city_back berlinInfo">
+                <h2 class="city_name">Berlin</h2>
+                <h3>Time</h3>
+                <p id="berlinTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons berlinWeather"></p>
+                <p class="berlin_temp"></p>
+            </div>
+        </div>
+
+
+        <!--Time and weather in Rome -->
+        <div class="city_block">
+            <div class="city rome">
+                <h2 class="city_name">Rome</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="rome"  data-area="europe" data-number="4219762">get info</button>
+            </div>
+            <div class="city_back romeInfo">
+                <h2 class="city_name">Rome</h2>
+                <h3>Time</h3>
+                <p id="romeTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons romeWeather"></p>
+                <p class="rome_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in New-York-->
+        <div class="city_block">
+            <div class="city new_york">
+                <h2 class="city_name">New York</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="new_york" data-area="america" data-number="5128581">get info</button>
+            </div>
+            <div class="city_back new_yorkInfo">
+                <h2 class="city_name">New York</h2>
+                <h3>Time</h3>
+                <p id="new_yorkTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons  new_yorkWeather"></p>
+                <p class="new_york_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Los Angeles -->
+        <div class="city_block">
+            <div class="city los_angeles">
+                <h2 class="city_name">Los-Angeles</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="los_angeles" data-area="america" data-number="5368361">get info</button>
+            </div>
+            <div class="city_back los_angelesInfo">
+                <h2 class="city_name">Los Angeles</h2>
+                <h3>Time</h3>
+                <p id="los_angelesTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons los_angelesWeather"></p>
+                <p class="los_angeles_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Toronto -->
+        <div class="city_block">
+            <div class="city toronto">
+                <h2 class="city_name">toronto, ca</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="toronto" data-area="america" data-number="6167865">get info</button>
+            </div>
+            <div class="city_back torontoInfo">
+                <h2 class="city_name">Toronto</h2>
+                <h3>Time</h3>
+                <p id="torontoTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons torontoWeather">claudy</p>
+                <p class="toronto_temp">+15 F/C</p>
+            </div>
+        </div>
+
+        <!--Time and weather in Vienna -->
+        <div class="city_block">
+            <div class="city vienna">
+                <h2 class="city_name">Vienna</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="vienna" data-area="europe" data-number="2761369">get info</button>
+            </div>
+            <div class="city_back viennaInfo">
+                <h2 class="city_name">Vienna</h2>
+                <h3>Time</h3>
+                <p id="viennaTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons viennaWeather"></p>
+                <p class="vienna_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Tokio -->
+        <div class="city_block">
+            <div class="city tokyo">
+                <h2 class="city_name">Tokyo</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="tokyo" data-area="asia" data-number="1850144">get info</button>
+            </div>
+            <div class="city_back tokyoInfo">
+                <h2 class="city_name">Tokyo</h2>
+                <h3>Time</h3>
+                <p id="tokyoTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons tokyoWeather"></p>
+                <p class="tokyo_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Paris -->
+        <div class="city_block">
+            <div class="city paris">
+                <h2 class="city_name">Paris</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="paris" data-area="europe" data-number="2988507">get info</button>
+            </div>
+            <div class="city_back parisInfo">
+                <h2 class="city_name">Paris</h2>
+                <h3>Time</h3>
+                <p id="parisTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons parisWeather"></p>
+                <p class="paris_temp"></p>
+            </div>
+        </div>
+
+        <!--Time and weather in Singapore-->
+        <div class="city_block">
+            <div class="city singapore">
+                <h2 class="city_name">singapore</h2>
+                <img src="" alt="" class="city_img">
+                <button class="get_info" id="singapore" data-area="asia" data-number="1880252">get info</button>
+            </div>
+            <div class="city_back singaporeInfo">
+                <h2 class="city_name">Singapore</h2>
+                <h3>Time</h3>
+                <p id="singaporeTime"></p>
+                <h3>Weather</h3>
+                <p class="weather_cons singaporeWeather"></p>
+                <p class="singapore_temp"></p>
+            </div>
+        </div>
+
+    </div>
+    
+<script src="js/getTime.js"></script>
+</body>
+</html>

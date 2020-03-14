@@ -1,0 +1,275 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cunia;
+    
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 1, 32);
+}
+
+.conteiner{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    background-color: rgb(4, 1, 32);
+    background-image: -webkit-radial-gradient(rgb(6, 6, 61) 10%, rgb(10, 6, 46) 50%, rgb(3, 0, 17) 100%);
+    background-image: radial-gradient(rgb(6, 6, 61) 10%, rgb(10, 6, 46) 50%, rgb(3, 0, 17) 100%);
+}
+h1{
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(4, 1, 32);
+    background-image: -webkit-radial-gradient(rgb(6, 6, 61) 10%, rgb(10, 6, 46) 50%, rgb(3, 0, 17) 100%);
+    background-image: radial-gradient(rgb(6, 6, 61) 10%, rgb(10, 6, 46) 50%, rgb(3, 0, 17) 100%);;
+
+}
+.city_block{
+    min-width: 280px;
+    min-height: 380px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    transition: 3s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  
+   
+
+}
+.city{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 3s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d; 
+    z-index: 100;
+}
+
+.city_name{
+    width: 100%;
+    height: 10%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(6, 1, 29);
+    
+}
+.city_img{
+    width: 90%;
+    height: 75%;
+    display: block;
+    border: 1px solid black;
+}
+
+/*back side*/
+
+.city_back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255); 
+    background-color: rgb(10, 6, 46);
+    backface-visibility: hidden;
+    transition: 3s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    z-index: 100;
+   
+}
+.city_back p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color:  rgb(255, 255, 255);
+    
+}
+
+.city_back h2{
+    color:  rgb(255, 255, 255);
+}
+
+.city_back h3{
+    width: 100%;
+    height: auto;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:  rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255) ;
+    
+}
+.line{
+    width: 200px;
+    height: 4px;
+    border-color:  rgb(255, 255, 255);
+   
+
+}
+
+
+
+/*button*/
+.get_info{
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(10, 6, 46);
+    color:  rgb(255, 255, 255);
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px 2px rgba(10, 6, 46, 0.5);
+    z-index: 10;
+
+}
+.get_info:active, .get_info:focus{
+    outline: none;
+}
+
+
+/*background images*/
+
+.moscow{
+    background-image: url(../img/moscow.png);
+    background-size: 60%;
+
+}
+.kiev{
+    background-image: url(../img/kiev.png);
+    background-size: 90%;
+
+}
+.london{
+    background-image: url(../img/london.png);
+    background-size: 70%;
+
+}
+
+.berlin{
+    background-image: url(../img/berlin.png);
+    background-size: 70%;
+
+}
+
+.rome{
+    background-image: url(../img/rome.png);
+    background-size: 90%;
+
+}
+
+.new_york{
+    background-image: url(../img/NY.png);
+    background-size: 70%;
+
+}
+
+.los_angeles{
+    background-image: url(../img/LA.png);
+    background-size: 80%;
+
+}
+
+.toronto{
+    background-image: url(../img/toronto.png);
+    background-size: 80%;
+
+}
+
+.vienna{
+    background-image: url(../img/vienna.png);
+    background-size: 80%;
+
+}
+
+.tokyo{
+    background-image: url(../img/Tokyo.png);
+    background-size: 80%;
+
+}
+.paris{
+    background-image: url(../img/paris2.png);
+    background-size: 80%;
+
+}
+.singapore{
+    background-image: url(../img/singapore.png);
+    background-size: 90%;
+ 
+}
+
+
+/*обработка события загрузки*/
+.load{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: white;
+    z-index: 20;
+}
+
+
+
+
+/*адаптация под мобильные устройства*/
+@media screen and (max-width: 800px){
+       h1{
+        font-size: 2.8rem;
+       }
+}
+
+@media screen and (max-width: 600px){
+    h1{
+     font-size: 2rem;
+    }
+}
+@media screen and (max-width: 360px){
+    h1{
+     font-size: 1.5rem;
+    }
+}
+
+
+
+/*подключение font*/
+@font-face {
+    font-family: Cunia; /* Гарнитура шрифта */
+    src: url(../fonts/Cunia.ttf); /* Путь к файлу со шрифтом */
+   }
